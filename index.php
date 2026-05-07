@@ -1,5 +1,10 @@
 <!-- index.php -->
-<?php include("conexion.php"); ?>
+<?php
+ include("conexion.php");
+ 
+ $sql = "SELECT * FROM articulos";
+ $resultado = $conn->query($sql);
+?>
 
 <!DOCTYPE html>
 <html lang="es">
